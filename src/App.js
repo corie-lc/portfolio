@@ -146,7 +146,7 @@ function ProjectCard() {
       </Accordion.Item>
 
       <Accordion.Item eventKey="5">
-      <Accordion.Header>Tank TP101 Project <Badge className='ms-2' bg="primary">C++</Badge></Accordion.Header>
+      <Accordion.Header>Tank TP101 Robotics Project <Badge className='ms-2' bg="primary">C++</Badge></Accordion.Header>
         <Accordion.Body>
           <Stack className="mb-3" direction="horizontal" gap={2}>
             <Badge bg="success">C++</Badge>
@@ -218,7 +218,7 @@ function IntroCard() {
     <Card className="mt-3 mb-3 ">
       <Card.Header>Introduction</Card.Header>
       <Card.Body>
-        <Card.Title>Corie LeClair</Card.Title>
+        <Card.Title>Corie LeClair: corieleclair.real@gmail.com</Card.Title>
         
         <Card.Text>
         <LangBadges />
