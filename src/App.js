@@ -60,7 +60,7 @@ function ProjectCard() {
 
           <hr/>
           
-          The 2018 year our team went on two win 2/3 Rookie Awards paired
+          The 2018 robot went on two win 2/3 Rookie Awards paired
           with multiple games won. 
 
           <hr/>
