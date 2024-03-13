@@ -96,8 +96,6 @@ function ProjectCard() {
 
           <ButtonGroup className='mt-3'>
           <Button onClick={() => openInNewTab('https://github.com/corie-lc/cb-enterprise')} variant="success">Source Code</Button>
-
-            <Button variant="success" >Source Code</Button>
           </ButtonGroup>
 
         </Accordion.Body>
