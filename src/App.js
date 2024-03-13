@@ -216,7 +216,7 @@ function InterestBadges() {
 function IntroCard() {
   return (
     <Card className="mt-3 mb-3 ">
-      <Card.Header>Introduction</Card.Header>
+      <Card.Header>Introduction(Site Is Not Ready For Mobile Use Yet)</Card.Header>
       <Card.Body>
         <Card.Title>Corie LeClair: corieleclair.real@gmail.com</Card.Title>
         
@@ -224,7 +224,7 @@ function IntroCard() {
         <LangBadges />
         <ToolBadges/>
         <InterestBadges/>
-          From web development to robotic engineering, I'be developed a wide range of skills and interests. 
+          Starting my journey in software development has left me with a lot of expierences. These range from competitive robotics competitions, internships, database tools, full fledged social media web application and more. Passion drives my exploration and development when it comes to softare development.
         </Card.Text>
         <Button  onClick={() => openInNewTab('https://github.com/corie-lc')} variant="primary">My Github</Button>
       </Card.Body>
