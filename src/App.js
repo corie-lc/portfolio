@@ -244,7 +244,7 @@ function HistoryContactAccord() {
         <ListGroup>
           <ListGroup.Item className='bg-success'>Velcro Companies USA (Manufactuing Full Time)</ListGroup.Item>
           <ListGroup.Item>Life Science Outsoucing (Full Time Manufacturing)</ListGroup.Item>
-          <ListGroup.Item>Walmart Team Lead (Full Time Manufacturing)</ListGroup.Item>
+          <ListGroup.Item>Walmart Team Lead (Full Time)</ListGroup.Item>
           <ListGroup.Item className='bg-primary'>International Dyslexia Association Internship (Site Editor)</ListGroup.Item>
         </ListGroup>
         </Accordion.Body>
