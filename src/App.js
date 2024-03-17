@@ -79,6 +79,7 @@ function ProjectCard() {
 
         </Accordion.Body>
       </Accordion.Item>
+      
 
       
       <Accordion.Item eventKey="2">
@@ -146,21 +147,31 @@ function ProjectCard() {
       </Accordion.Item>
 
       <Accordion.Item eventKey="5">
-      <Accordion.Header>Tank TP101 Robotics Project <Badge className='ms-2' bg="primary">C++</Badge></Accordion.Header>
+      <Accordion.Header>Glenniffer Robotics <Badge className='ms-2' bg="primary">Python</Badge><Badge className='ms-2' bg="danger">Java</Badge></Accordion.Header>
         <Accordion.Body>
           <Stack className="mb-3" direction="horizontal" gap={2}>
-            <Badge bg="success">C++</Badge>
-            <Badge bg="success">Image/Video Processing</Badge>
+            <Badge bg="success">Python</Badge>
+            <Badge bg="success">Java</Badge>
+            <Badge bg="success">Video Processing(OpenCV)</Badge>
             <Badge bg="success">Raspberry PI</Badge>
             <Badge bg="success">Linux</Badge>
             <Badge bg="success">GPIO</Badge>
             <Badge bg="success">Building & Electrical</Badge>
           </Stack>
 
-            This will be updated shortly once the source code is published. 
+          This robotics project is two parts, a remote controller via sockets (java, to port to android) and python to control the
+          motors, proximity sensors, camera, ect.
+          <hr/>
+
+          <ButtonGroup className='mt-3' >
+            <Button onClick={() => openInNewTab('https://github.com/corie-lc/GlennifferRobotics')} variant="primary">Glenniffer Robot Code</Button>
+            <Button onClick={() => openInNewTab('https://github.com/corie-lc/GlennifferController')} variant="success">Glenniffer Controller Code</Button>
+          </ButtonGroup>
+
 
         </Accordion.Body>
       </Accordion.Item>
+      
     </Accordion>
   );
 }
@@ -265,7 +276,7 @@ function App() {
   document.querySelector("body").setAttribute("data-bs-theme", 'dark')
 
   return (
-    <div  data-bs-theme="dark" style={{height: "100%", width: "70%", margin: "0 auto"}} className="App">
+    <div  data-bs-theme="dark" style={{height: "100%", width: "70%", margin: "0 auto", marginBottom: "20%"}} className="App">
       <IntroCard/>
 
       <HistoryContactAccord/>
