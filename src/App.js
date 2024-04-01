@@ -171,6 +171,30 @@ function ProjectCard() {
 
         </Accordion.Body>
       </Accordion.Item>
+
+      <Accordion.Item eventKey="6">
+      <Accordion.Header>OpenManufacturing <Badge className='ms-2' bg="primary">Kotlin</Badge></Accordion.Header>
+        <Accordion.Body>
+          <Stack className="mb-3" direction="horizontal" gap={2}>
+            <Badge bg="success">Kotlin</Badge>
+            <Badge bg="success">Java</Badge>
+            <Badge bg="success">JavaFX</Badge>
+            <Badge bg="success">Maven/Gradle</Badge>
+          </Stack>
+
+            OpenManufacturing is a piece of software to replace costly traveller software for start-up manufacturing companies. This will be a fully customizable 
+            enterprise level application, written in Kotlin with JavaFX. This will have the option to store jobs via a database or, for less tech inclined people, a master folder
+            with jobs in it.
+
+            <hr/>
+
+
+          <ButtonGroup className='mt-3'>
+            <Button onClick={() => openInNewTab('https://github.com/corie-lc/ManufacturingConnections')} variant="success">Source Code</Button>
+          </ButtonGroup>
+
+        </Accordion.Body>
+      </Accordion.Item>
       
     </Accordion>
   );
