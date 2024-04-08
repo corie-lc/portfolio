@@ -5,7 +5,6 @@ import Card from 'react-bootstrap/Card';
 import Accordion from 'react-bootstrap/Accordion';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Badge from 'react-bootstrap/Badge';
-import Stack from 'react-bootstrap/Stack';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ListGroup from 'react-bootstrap/ListGroup';
@@ -24,14 +23,14 @@ function ProjectCard() {
         <Accordion.Header>CollectorsBoard.live    <Badge className='ms-2' bg="primary">Python</Badge>
         </Accordion.Header>
         <Accordion.Body>
-        <Stack className="mb-3" direction="horizontal" gap={2}>
-          <Badge bg="success">Python</Badge>
-          <Badge bg="success">Flask</Badge>
-          <Badge bg="success">Bootstrap</Badge>
-          <Badge bg="success">JavaScript, Jquery, Ajax</Badge>
-          <Badge bg="success">Hashing</Badge>
-          <Badge bg="success">SQL</Badge>
-        </Stack>
+        <div className="mb-3" direction="horizontal" gap={2}>
+          <Badge style={{marginRight: "10px"}} bg="success">Python</Badge>
+          <Badge style={{marginRight: "10px"}} bg="success">Flask</Badge>
+          <Badge style={{marginRight: "10px"}} bg="success">Bootstrap</Badge>
+          <Badge style={{marginRight: "10px"}} bg="success">JavaScript, Jquery, Ajax</Badge>
+          <Badge  style={{marginRight: "10px"}}bg="success">Hashing</Badge>
+          <Badge style={{marginRight: "10px"}} bg="success">SQL</Badge>
+        </div>
           CollectorsBoard.live is an open source digital tool to organize, track, share, manage and embrace your collections & collectibles. 
           This site includes the ability to create accounts, edit accounts, create collections, create posts and create comments. Deeper functions include privacy,
           feed recommendation, search options, communities, ect. Written in Python with the help of Flask and Bootstrap Five.
@@ -48,13 +47,13 @@ function ProjectCard() {
       <Accordion.Item eventKey="1">
       <Accordion.Header>FRC Robotics Engineering  <Badge className='ms-2' bg="danger">Java</Badge></Accordion.Header>
         <Accordion.Body>
-        <Stack className="mb-3" direction="horizontal" gap={2}>
-          <Badge bg="success">Robotic Engineering</Badge>
-          <Badge bg="success">Java</Badge>
-          <Badge bg="success">Image Processing</Badge>
-          <Badge bg="success">Automation</Badge>
-          <Badge bg="success">Awards</Badge>
-        </Stack>
+        <div className="mb-3" direction="horizontal" gap={2}>
+          <Badge style={{marginRight: "10px"}} bg="success">Robotic Engineering</Badge>
+          <Badge style={{marginRight: "10px"}} bg="success">Java</Badge>
+          <Badge style={{marginRight: "10px"}} bg="success">Image Processing</Badge>
+          <Badge style={{marginRight: "10px"}} bg="success">Automation</Badge>
+          <Badge style={{marginRight: "10px"}} bg="success">Awards</Badge>
+        </div>
           FRC is a robotics competiton that is taken on by high schoolers. Robots are built with Java or C++ and compete on a national level. I was the lead, and the only
           software engineer on the team for both the 2017-2018 Team and the 2019-2020 Team. 
 
@@ -85,10 +84,10 @@ function ProjectCard() {
       <Accordion.Item eventKey="2">
       <Accordion.Header>cb-enterprise <Badge className='ms-2' bg="success">GoLang</Badge></Accordion.Header>
         <Accordion.Body>
-          <Stack className="mb-3" direction="horizontal" gap={2}>
-            <Badge bg="success">GoLang</Badge>
-            <Badge bg="success">SQL</Badge>
-          </Stack>
+          <div className="mb-3" direction="horizontal" gap={2}>
+            <Badge style={{marginRight: "10px"}} bg="success">GoLang</Badge>
+            <Badge style={{marginRight: "10px"}} bg="success">SQL</Badge>
+          </div>
 
             cb-enterprise is a CLI tool to manage, support and edit systems within the CollectorsBoard realm.
 
@@ -105,12 +104,12 @@ function ProjectCard() {
       <Accordion.Item eventKey="4">
       <Accordion.Header>collectorsboard-news-robot <Badge className='ms-2' bg="primary">Python</Badge></Accordion.Header>
         <Accordion.Body>
-          <Stack className="mb-3" direction="horizontal" gap={2}>
-            <Badge bg="success">Python</Badge>
-            <Badge bg="success">Python</Badge>
-            <Badge bg="success">Web Scraping</Badge>
-            <Badge bg="success">Automation</Badge>
-          </Stack>
+          <div className="mb-3" direction="horizontal" gap={2}>
+            <Badge style={{marginRight: "10px"}} bg="success">Python</Badge>
+            <Badge style={{marginRight: "10px"}} bg="success">Python</Badge>
+            <Badge style={{marginRight: "10px"}} bg="success">Web Scraping</Badge>
+            <Badge style={{marginRight: "10px"}} bg="success">Automation</Badge>
+          </div>
 
             collectorsboard-news-robot is a CLI bot to search and collect news headlines, and create posts for news headlines specific to a community in CollectorsBoard.live
 
@@ -127,12 +126,12 @@ function ProjectCard() {
       <Accordion.Item eventKey="3">
       <Accordion.Header>Portfolio <Badge className='ms-2' bg="warning">React/Node.js</Badge></Accordion.Header>
         <Accordion.Body>
-          <Stack className="mb-3" direction="horizontal" gap={2}>
-            <Badge bg="success">JavaScript</Badge>
-            <Badge bg="success">React</Badge>
-            <Badge bg="success">Node.js</Badge>
-            <Badge bg="success">Bootstrap</Badge>
-          </Stack>
+          <div className="mb-3" direction="horizontal" gap={2}>
+            <Badge style={{marginRight: "10px"}} bg="success">JavaScript</Badge>
+            <Badge style={{marginRight: "10px"}} bg="success">React</Badge>
+            <Badge style={{marginRight: "10px"}} bg="success">Node.js</Badge>
+            <Badge style={{marginRight: "10px"}} bg="success">Bootstrap</Badge>
+          </div>
 
             This site you are looking at now is my portfolio, which includes my projects and interests.
 
@@ -149,15 +148,15 @@ function ProjectCard() {
       <Accordion.Item eventKey="5">
       <Accordion.Header>Glenniffer Robotics <Badge className='ms-2' bg="primary">Python</Badge><Badge className='ms-2' bg="danger">Java</Badge></Accordion.Header>
         <Accordion.Body>
-          <Stack className="mb-3" direction="horizontal" gap={2}>
-            <Badge bg="success">Python</Badge>
-            <Badge bg="success">Java</Badge>
-            <Badge bg="success">Video Processing(OpenCV)</Badge>
-            <Badge bg="success">Raspberry PI</Badge>
-            <Badge bg="success">Linux</Badge>
-            <Badge bg="success">GPIO</Badge>
-            <Badge bg="success">Building & Electrical</Badge>
-          </Stack>
+          <div className="mb-3" direction="horizontal" gap={2}>
+            <Badge style={{marginRight: "10px"}} bg="success">Python</Badge>
+            <Badge style={{marginRight: "10px"}} bg="success">Java</Badge>
+            <Badge style={{marginRight: "10px"}} bg="success">Video Processing(OpenCV)</Badge>
+            <Badge style={{marginRight: "10px"}} bg="success">Raspberry PI</Badge>
+            <Badge style={{marginRight: "10px"}} bg="success">Linux</Badge>
+            <Badge style={{marginRight: "10px"}} bg="success">GPIO</Badge>
+            <Badge style={{marginRight: "10px"}} bg="success">Building & Electrical</Badge>
+          </div>
 
           This robotics project is two parts, a remote controller via sockets (java, to port to android) and python to control the
           motors, proximity sensors, camera, ect.
@@ -175,12 +174,12 @@ function ProjectCard() {
       <Accordion.Item eventKey="6">
       <Accordion.Header>OpenManufacturing <Badge className='ms-2' bg="primary">Kotlin</Badge></Accordion.Header>
         <Accordion.Body>
-          <Stack className="mb-3" direction="horizontal" gap={2}>
-            <Badge bg="success">Kotlin</Badge>
-            <Badge bg="success">Java</Badge>
-            <Badge bg="success">JavaFX</Badge>
-            <Badge bg="success">Maven/Gradle</Badge>
-          </Stack>
+          <div className="mb-3" direction="horizontal" gap={2}>
+            <Badge style={{marginRight: "10px"}} bg="success">Kotlin</Badge>
+            <Badge style={{marginRight: "10px"}} bg="success">Java</Badge>
+            <Badge style={{marginRight: "10px"}} bg="success">JavaFX</Badge>
+            <Badge style={{marginRight: "10px"}} bg="success">Maven/Gradle</Badge>
+          </div>
 
             OpenManufacturing is a piece of software to replace costly traveller software for start-up manufacturing companies. This will be a fully customizable 
             enterprise level application, written in Kotlin with JavaFX. This will have the option to store jobs via a database or, for less tech inclined people, a master folder
@@ -205,45 +204,45 @@ function ProjectCard() {
 
 function ToolBadges() {
   return (
-    <Stack className="mb-3" direction="horizontal" gap={2}>
-      <Badge bg="success">Flask</Badge>
-      <Badge bg="success">Node.js</Badge>
-      <Badge bg="success">React</Badge>
-      <Badge bg="success">Bootstrap/Bootstrap React</Badge>
-      <Badge bg="success">Django</Badge>
-      <Badge bg="success">Jquery & Ajax</Badge>
-      <Badge bg="success">Wordpress</Badge>
-      <Badge bg="success">Boto3</Badge>
-      <Badge bg="success">Linux</Badge>
-    </Stack>
+    <div style={{width: "20px;", float: "left"}}  className="mb-3" direction="horizontal" gap={2}>
+      <Badge style={{marginRight: "10px"}} bg="success">Flask</Badge>
+      <Badge style={{marginRight: "10px"}} bg="success">Node.js</Badge>
+      <Badge style={{marginRight: "10px"}} bg="success">React</Badge>
+      <Badge style={{marginRight: "10px"}} bg="success">Bootstrap/Bootstrap React</Badge>
+      <Badge style={{marginRight: "10px"}} bg="success">Django</Badge>
+      <Badge style={{marginRight: "10px"}} bg="success">Jquery & Ajax</Badge>
+      <Badge style={{marginRight: "10px"}} bg="success">Wordpress</Badge>
+      <Badge style={{marginRight: "10px"}} bg="success">Boto3</Badge>
+      <Badge style={{marginRight: "10px"}} bg="success">Linux</Badge>
+    </div>
   );
 }
 
 
 function LangBadges() {
   return (
-    <Stack style={{width: "20px;"}}  className="mb-3" direction="horizontal" gap={2}>
-      <Badge bg="primary">Python</Badge>
-      <Badge bg="primary">GoLang</Badge>
-      <Badge bg="primary">Java</Badge>
-      <Badge bg="primary">Kotlin</Badge>
-      <Badge bg="primary">HTML/CSS</Badge>
-      <Badge bg="primary">JavaScript</Badge>
-      <Badge bg="primary">C++</Badge>
-      <Badge bg="primary">SQL</Badge>
-    </Stack>
+    <div style={{width: "20px;", float: "left"}}  className="mb-3" direction="horizontal" gap={2}>
+      <Badge style={{marginRight: "10px"}} bg="primary">Python</Badge>
+      <Badge style={{marginRight: "10px"}} bg="primary">GoLang</Badge>
+      <Badge style={{marginRight: "10px"}} bg="primary">Java</Badge>
+      <Badge style={{marginRight: "10px"}} bg="primary">Kotlin</Badge>
+      <Badge style={{marginRight: "10px"}} bg="primary">HTML/CSS</Badge>
+      <Badge style={{marginRight: "10px"}} bg="primary">JavaScript</Badge>
+      <Badge style={{marginRight: "10px"}} bg="primary">C++</Badge>
+      <Badge style={{marginRight: "10px"}} bg="primary">SQL</Badge>
+    </div>
   );
 }
 
 function InterestBadges() {
   return (
-    <Stack className="mb-3 overflow: scroll;" direction="horizontal" gap={2}>
-      <Badge bg="warning">Robotic Engineering</Badge>
-      <Badge bg="warning">Backend Web</Badge>
-      <Badge bg="warning">Backend Enterprise</Badge>
-      <Badge bg="warning">Automation</Badge>
-      <Badge bg="warning">Linux</Badge>
-    </Stack>
+    <div style={{width: "20px;", float: "left"}}  className="mb-3" direction="horizontal" gap={2}>
+      <Badge style={{marginRight: "10px"}} bg="warning">Robotic Engineering</Badge>
+      <Badge style={{marginRight: "10px"}} bg="warning">Backend Web</Badge>
+      <Badge style={{marginRight: "10px"}} bg="warning">Backend Enterprise</Badge>
+      <Badge style={{marginRight: "10px"}} bg="warning">Automation</Badge>
+      <Badge style={{marginRight: "10px"}} bg="warning">Linux</Badge>
+    </div>
   );
 }
 
@@ -256,10 +255,10 @@ function IntroCard() {
         <Card.Title>Corie LeClair: corieleclair.real@gmail.com</Card.Title>
         
         <Card.Text>
-        <LangBadges />
-        <ToolBadges/>
-        <InterestBadges/>
-          Starting my journey in software development has left me with a lot of expierences. These range from competitive robotics competitions, internships, database tools, full fledged social media web application and more. Passion drives my exploration and development when it comes to softare development.
+        <QuickOverView />
+        <div>
+        My journey in software development has left me with a lot of expierences. These range from competitive robotics competitions, internships, database tools, full fledged social media web application and more. Passion drives my exploration and development when it comes to softare development.
+        </div>
         </Card.Text>
         <Button  onClick={() => openInNewTab('https://github.com/corie-lc')} variant="primary">My Github</Button>
       </Card.Body>
@@ -267,6 +266,26 @@ function IntroCard() {
   );
 }
 
+function QuickOverView () {
+  return (
+    <Accordion className='mt-3 mb-3 b-0'>
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>Quick Skill Check  <Badge className='ms-2' bg="success">Fast</Badge></Accordion.Header>
+        <Accordion.Body>
+        <LangBadges />
+        <br />
+        <ToolBadges/>
+        <br />
+
+        <InterestBadges/>
+        <br />
+        <br />
+        <br />
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
+  )
+}
 
 function HistoryContactAccord() {
   return (

@@ -45,3 +45,7 @@
 ::backdrop{
   background-color: #282c34;
 }
+
+.collapse.in {
+  height: auto !important;
+}
