@@ -221,7 +221,7 @@ function ToolBadges() {
 
 function LangBadges() {
   return (
-    <div style={{width: "20px;", float: "left"}}  className="mb-3" direction="horizontal" gap={2}>
+    <div style={{width: "20px;", float: "left"}}  className="mb-3 mt-3" direction="horizontal" gap={2}>
       <Badge style={{marginRight: "10px"}} bg="primary">Python</Badge>
       <Badge style={{marginRight: "10px"}} bg="primary">GoLang</Badge>
       <Badge style={{marginRight: "10px"}} bg="primary">Java</Badge>
@@ -250,12 +250,20 @@ function InterestBadges() {
 function IntroCard() {
   return (
     <Card className="mt-3 mb-3 ">
-      <Card.Header>Introduction(Site Is Not Ready For Mobile Use Yet)</Card.Header>
+      <Card.Header>Introducing: Corie LeClair </Card.Header>
       <Card.Body>
         <Card.Title>Corie LeClair: corieleclair.real@gmail.com</Card.Title>
         
         <Card.Text>
-        <QuickOverView />
+        <LangBadges />
+        <br />
+        <ToolBadges/>
+        <br />
+
+        <InterestBadges/>
+        <br />
+        <br />
+        <br />
         <div>
         My journey in software development has left me with a lot of expierences. These range from competitive robotics competitions, internships, database tools, full fledged social media web application and more. Passion drives my exploration and development when it comes to softare development.
         </div>
@@ -266,26 +274,6 @@ function IntroCard() {
   );
 }
 
-function QuickOverView () {
-  return (
-    <Accordion className='mt-3 mb-3 b-0'>
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>Quick Skill Check  <Badge className='ms-2' bg="success">Fast</Badge></Accordion.Header>
-        <Accordion.Body>
-        <LangBadges />
-        <br />
-        <ToolBadges/>
-        <br />
-
-        <InterestBadges/>
-        <br />
-        <br />
-        <br />
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
-  )
-}
 
 function HistoryContactAccord() {
   return (
