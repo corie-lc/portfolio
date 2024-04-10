@@ -146,7 +146,7 @@ function ProjectCard() {
       </Accordion.Item>
 
       <Accordion.Item eventKey="5">
-      <Accordion.Header>Glenniffer Robotics <Badge className='ms-2' bg="primary">Python</Badge><Badge className='ms-2' bg="danger">Java</Badge></Accordion.Header>
+      <Accordion.Header>Glenniffer Robotics <Badge className='ms-2' bg="primary">Python</Badge><Badge className='ms-2' bg="danger">Java</Badge><Badge className='ms-2' bg="transparent">In Progress</Badge></Accordion.Header>
         <Accordion.Body>
           <div className="mb-3" direction="horizontal" gap={2}>
             <Badge style={{marginRight: "10px"}} bg="success">Python</Badge>
@@ -159,7 +159,7 @@ function ProjectCard() {
           </div>
 
           This robotics project is two parts, a remote controller via sockets (java, to port to android) and python to control the
-          motors, proximity sensors, camera, ect.
+          motors, proximity sensors, camera, ect. This is on pause until more parts arrive. Waiting on a central power chip and a larger battery.
           <hr/>
 
           <ButtonGroup className='mt-3' >
@@ -172,7 +172,7 @@ function ProjectCard() {
       </Accordion.Item>
 
       <Accordion.Item eventKey="6">
-      <Accordion.Header>OpenManufacturing <Badge className='ms-2' bg="primary">Kotlin</Badge></Accordion.Header>
+      <Accordion.Header>OpenManufacturing <Badge className='ms-2' bg="primary">Kotlin</Badge> <Badge className='ms-2' bg="transparent">In Progress</Badge></Accordion.Header>
         <Accordion.Body>
           <div className="mb-3" direction="horizontal" gap={2}>
             <Badge style={{marginRight: "10px"}} bg="success">Kotlin</Badge>
@@ -183,7 +183,7 @@ function ProjectCard() {
 
             OpenManufacturing is a piece of software to replace costly traveller software for start-up manufacturing companies. This will be a fully customizable 
             enterprise level application, written in Kotlin with JavaFX. This will have the option to store jobs via a database or, for less tech inclined people, a master folder
-            with jobs in it.
+            with jobs in it. This is in progress and has limited development.
 
             <hr/>
 
@@ -264,9 +264,10 @@ function IntroCard() {
         <br />
         <br />
         <br />
-        <div>
-        My journey in software development has left me with a lot of expierences. These range from competitive robotics competitions, internships, database tools, full fledged social media web application and more. Passion drives my exploration and development when it comes to softare development.
-        </div>
+        <br />
+        <text className='mt-2'>
+          If you made it here you must be at least a little bit interested in me. I've dipped into a lot of different tools, langauges and projects but these are my most recent projects and the ones I like the most. Enjoy!
+        </text>
         </Card.Text>
         <Button  onClick={() => openInNewTab('https://github.com/corie-lc')} variant="primary">My Github</Button>
       </Card.Body>
