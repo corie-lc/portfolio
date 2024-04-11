@@ -9,11 +9,46 @@ import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ListGroup from 'react-bootstrap/ListGroup';
 
+function updateGit(){
+  fetch('https://api.github.com/repos/corie-lc/portfolio/commits?per_page=1')
+                      .then(res => res.json())
+                      .then(res => {
+                        document.getElementById('portfolio-update').innerHTML = "Git Update(s): " + res[0].commit.message
+                      });
+
+  fetch('https://api.github.com/repos/corie-lc/collectorsboard/commits?per_page=1')
+                        .then(res => res.json())
+                        .then(res => {
+                          document.getElementById('collectors-update').innerHTML = "Git Update(s): " + res[0].commit.message
+                        });         
+  fetch('https://api.github.com/repos/corie-lc/ManufacturingConnections/commits?per_page=1')
+                        .then(res => res.json())
+                        .then(res => {
+                          document.getElementById('manu-update').innerHTML = "Git Update(s): " + res[0].commit.message
+                        });         
+  fetch('https://api.github.com/repos/corie-lc/cb-enterprise/commits?per_page=1')
+                        .then(res => res.json())
+                        .then(res => {
+                          document.getElementById('cbent-update').innerHTML = "Git Update(s): " + res[0].commit.message
+                        });                              
+  fetch('https://api.github.com/repos/corie-lc/collectorsboard-news-robot/commits?per_page=1')
+                        .then(res => res.json())
+                        .then(res => {
+                          document.getElementById('cbot-update').innerHTML = "Git Update(s): " + res[0].commit.message
+                        });         
+  fetch('https://api.github.com/repos/corie-lc/GlennifferRobotics/commits?per_page=1')
+                        .then(res => res.json())
+                        .then(res => {
+                          document.getElementById('robot-update').innerHTML = "Git Update(s): " + res[0].commit.message
+                        });                                        
+
+}
 
 
 function openInNewTab(url) {
   window.open(url, '_blank').focus();
 }
+
 
 
 function ProjectCard() {
@@ -36,6 +71,10 @@ function ProjectCard() {
           feed recommendation, search options, communities, ect. Written in Python with the help of Flask and Bootstrap Five.
 
           <hr/>
+
+          <Badge style={{marginRight: "10px"}} id="collectors-update" className='ms-2' bg="secondary"></Badge>
+
+          <br />
 
           <ButtonGroup className='mt-3' >
             <Button variant="primary" onClick={() => openInNewTab('https://github.com/corie-lc/collectorsboard')}>Source Code</Button>
@@ -93,6 +132,9 @@ function ProjectCard() {
 
             <hr/>
 
+            <Badge style={{marginRight: "10px"}} id="cbent-update" className='ms-2' bg="secondary"></Badge>
+            <br />
+
 
           <ButtonGroup className='mt-3'>
           <Button onClick={() => openInNewTab('https://github.com/corie-lc/cb-enterprise')} variant="success">Source Code</Button>
@@ -114,6 +156,8 @@ function ProjectCard() {
             collectorsboard-news-robot is a CLI bot to search and collect news headlines, and create posts for news headlines specific to a community in CollectorsBoard.live
 
             <hr/>
+            <Badge style={{marginRight: "10px"}} id="cbot-update" className='ms-2' bg="secondary"></Badge>
+            <br />
 
 
           <ButtonGroup className='mt-3' >
@@ -136,6 +180,11 @@ function ProjectCard() {
             This site you are looking at now is my portfolio, which includes my projects and interests.
 
             <hr/>
+
+
+            <Badge style={{marginRight: "10px"}} id="portfolio-update" className='ms-2' bg="secondary"></Badge>
+
+            <br />
 
 
           <ButtonGroup className='mt-3'>
@@ -162,6 +211,9 @@ function ProjectCard() {
           motors, proximity sensors, camera, ect. This is on pause until more parts arrive. Waiting on a central power chip and a larger battery.
           <hr/>
 
+          <Badge style={{marginRight: "10px"}} id="robot-update" className='ms-2' bg="secondary"></Badge>
+            <br />
+
           <ButtonGroup className='mt-3' >
             <Button onClick={() => openInNewTab('https://github.com/corie-lc/GlennifferRobotics')} variant="primary">Glenniffer Robot Code</Button>
             <Button onClick={() => openInNewTab('https://github.com/corie-lc/GlennifferController')} variant="success">Glenniffer Controller Code</Button>
@@ -185,7 +237,11 @@ function ProjectCard() {
             enterprise level application, written in Kotlin with JavaFX. This will have the option to store jobs via a database or, for less tech inclined people, a master folder
             with jobs in it. This is in progress and has limited development.
 
+            
+
             <hr/>
+            <Badge style={{marginRight: "10px"}} id="manu-update" className='ms-2' bg="secondary"></Badge>
+            <br />
 
 
           <ButtonGroup className='mt-3'>
@@ -276,6 +332,7 @@ function IntroCard() {
 }
 
 
+
 function HistoryContactAccord() {
   return (
     <Accordion className='mt-3'>
@@ -322,4 +379,5 @@ function App() {
   );
 }
 
+updateGit()
 export default App;
